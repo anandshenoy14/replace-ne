@@ -26,4 +26,16 @@ suite("Extension Tests", function() {
         var resultString = myExtension.replaceNe(originalString);
         assert.equal(resultString,originalString);
     });
+    test("Test if notEmpty in Original Text with () New Text is free of notEmpty", function(){
+        var originalString =  "This is my test string with notEmpty(data) scenario";
+        var requiredResultString = "This is my test string with data scenario";
+        var resultString = myExtension.replaceNe(originalString);
+        assert.equal(resultString,requiredResultString);
+    });
+    test("Test if multiple notEmpty in Original Text with () New Text is free of notEmpty", function(){
+        var originalString =  "This is my test string with (notEmpty(data) and notEmpty(data.something)) scenario";
+        var requiredResultString = "This is my test string with (data and data.something) scenario";
+        var resultString = myExtension.replaceNe(originalString);
+        assert.equal(resultString,requiredResultString);
+    });
 });

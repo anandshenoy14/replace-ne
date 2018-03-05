@@ -2,13 +2,15 @@
     "name": "replace-ne",
     "displayName": "replace-ne",
     "description": "Simple Utility to remove notEmpty(object) checks while transforming Marko v2 components to Marko v3",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "anandshenoy14",
     "engines": {
-        "vscode": "^1.20.0"
+        "vscode": "^1.17.0"
     },
     "categories": [
-        "Other"
+        "Other",
+        "Marko",
+        "Remove NotEmpty"
     ],
     "activationEvents": [
         "onCommand:extension.replaceNotEmpty"
@@ -30,5 +32,17 @@
         "eslint": "^4.11.0",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
+    },
+    "icon" : "images/notEmpty.png",
+    "galleryBanner": {
+		"color": "#C80000",
+		"theme": "dark"
+    },
+    "author" : {
+        "name" : "Anand Shenoy"
+    },
+    "repository": {
+		"type": "git",
+        "url": "https://github.com/anandshenoy14/replace-ne.git"
     }
 }
