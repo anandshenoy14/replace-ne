@@ -1,6 +1,6 @@
 # replace-ne
 
-!Logo[images/notEmpty.png]
+![Logo](images/notEmpty.png)
 
 A simple utility in the form of a VS Code Extension which allows users to get rid of notEmpty in their code which is useful while porting from MarkoV2 to MarkoV3.
 
