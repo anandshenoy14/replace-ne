@@ -2,7 +2,7 @@
     "name": "replace-ne",
     "displayName": "replace-ne",
     "description": "Simple Utility to remove notEmpty(object) checks while transforming Marko v2 components to Marko v3",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "publisher": "anandshenoy14",
     "engines": {
         "vscode": "^1.17.0"
@@ -38,9 +38,9 @@
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
     },
-    "icon" : "images/notEmpty.png",
+    "icon" : "images/notEmpty_v1.0.3.png",
     "galleryBanner": {
-		"color": "#C80000",
+		"color": "#00c888",
 		"theme": "dark"
     },
     "author" : {
