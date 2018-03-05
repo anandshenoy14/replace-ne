@@ -11,13 +11,13 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.replaceNotEmpty"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
+            "command": "extension.replaceNotEmpty",
+            "title": "Click here to Replace NotEmpty in a template.marko file"
         }]
     },
     "scripts": {
