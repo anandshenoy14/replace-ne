@@ -38,4 +38,10 @@ suite("Extension Tests", function() {
         var resultString = myExtension.replaceNe(originalString);
         assert.equal(resultString,requiredResultString);
     });
+    test("Test if multiple notEmpty in Original Text with () New Text is free of notEmpty and balanced in case of long string", function(){
+        var originalString =  "<if((((notEmpty(data.model.maxQuantity) && notEmpty(data.model.displayLabel)) && notEmpty(data.model.displayLabel.textSpans)) && notEmpty(data.model.maxQuantity)) && (data.model.maxQuantity.value > 0))>";
+        var requiredResultString = "<if((((data.model.maxQuantity && data.model.displayLabel) && data.model.displayLabel.textSpans) && data.model.maxQuantity) && (data.model.maxQuantity.value > 0))>";
+        var resultString = myExtension.replaceNe(originalString);
+        assert.equal(resultString,requiredResultString);
+    });
 });

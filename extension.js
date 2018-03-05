@@ -40,8 +40,11 @@ function removeNotEmpty(originalString){
             }
             for(var i =0; i< endIndices.length ; i++){ 
                 originalString = originalString.slice(0,endIndices[i]) + originalString.slice(endIndices[i]+1); 
-                if(endIndices.length > 1 && i!==endIndices.length-1)
-                    endIndices[i+1] = endIndices[i+1] - 1;
+                var j = i;
+                while(j!==endIndices.length-1){
+                    endIndices[j+1] = endIndices[j+1] - 1;
+                    j++;
+                }
             }
             return originalString.replace(/notEmpty[(]/g,'');
         }else{
